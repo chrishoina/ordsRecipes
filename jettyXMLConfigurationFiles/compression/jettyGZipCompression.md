@@ -49,3 +49,5 @@ Save this to your `/ords/config/global/standalone/etc` directory:
 Inspecting Request and Response headers, you'll see the new GZip compression included. 
 
 ![accept-encoding-response-headers](./images/accept-encoding-response-headers.png " ")
+
+/#tag
