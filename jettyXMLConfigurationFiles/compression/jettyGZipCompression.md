@@ -50,5 +50,4 @@ Inspecting Request and Response headers, you'll see the new GZip compression inc
 
 ![accept-encoding-response-headers](./images/accept-encoding-response-headers.png " ")
 
-\#compression \#jetty 
-#jettyxml
+#jetty #jettyxml #gzip #compression #performance #standalone #GzipHandler #jetty12 #12.0.25
