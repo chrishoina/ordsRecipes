@@ -1,13 +1,4 @@
----
-title: "My Awesome Blog Post"
-date: 2023-10-27
-author: "Jane Doe"
-tags:
-  - Markdown
-  - Metadata
-  - Blogging
-summary: "This post explores how to effectively add tags and metadata to your Markdown documents."
----
+[#mytag](#tag)
 
 # GZip compression 
 
