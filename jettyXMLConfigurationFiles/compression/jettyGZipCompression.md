@@ -1,4 +1,6 @@
 [#mytag](#tag)
+:mytag:
+&mytag&
 
 # GZip compression 
 
