@@ -1,8 +1,3 @@
-[#mytag](#tag)
-:mytag:
-&mytag&
-\#foo
-
 # GZip compression 
 
 ## Environment details
@@ -55,4 +50,4 @@ Inspecting Request and Response headers, you'll see the new GZip compression inc
 
 ![accept-encoding-response-headers](./images/accept-encoding-response-headers.png " ")
 
-/#tag
+\#compression \#jetty #jettyxml
