@@ -1,6 +1,7 @@
 [#mytag](#tag)
 :mytag:
 &mytag&
+\#foo
 
 # GZip compression 
 
