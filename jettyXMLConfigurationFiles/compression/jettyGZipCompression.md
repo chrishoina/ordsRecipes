@@ -9,7 +9,7 @@
 
 ## How to enable GZip compression in ORDS Standalone (Jetty)
 
-To enable GZip compression in ORDS, add this file to your `/ords/config/global/standalone/etc` directory, and restart your ORDS instance.[^1] If you do not have a `/ords/config/global/standalone/etc` directory `cd` to the `standalone` directory, and then `mkdir etc`, then add the file.
+To enable GZip compression in ORDS, add this file to your `/ords/config/global/standalone/etc` directory, and restart your ORDS instance.[^1] If you do not have a `/ords/config/global/standalone/etc` directory `cd` to the `standalone` directory, and then `mkdir etc`, then add the file -- in this example named `jetty-compression.xml`.
 
   ![cat-jetty-compression](./images/cat-jetty-compression.png " ")
 

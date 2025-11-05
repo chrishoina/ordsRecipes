@@ -5,9 +5,12 @@
 **Jetty version used:** 12.0.25
 **Java version used:** GraalVM EE 21.3.10 for Java 17.0.11
 
+## How to create custom Access Logs for ORDS Standalone (Jetty)
 
+To enable GZip compression in ORDS, add this file to your `/ords/config/global/standalone/etc` directory, and restart your ORDS instance.[^1] If you do not have a `/ords/config/global/standalone/etc` directory `cd` to the `standalone` directory, and then `mkdir etc`, then add the file -- in this example named `jetty-access-log.xml`.
 
-/global/standalone/etc/jetty-access-log.xml
+### Sample file 
+
 <?xml version="1.0"?>
 <!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
 <Configure id="Server" class="org.eclipse.jetty.server.Server">
