@@ -1,0 +1,1 @@
+https://followthecoffee.com/ords-standalone-specifying-a-response-header-with-jetty-xml/
