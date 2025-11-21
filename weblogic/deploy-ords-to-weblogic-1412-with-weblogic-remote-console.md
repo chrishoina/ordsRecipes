@@ -1,11 +1,13 @@
 # Environment details
 
+---
+
 **Last tested:** 20-NOV-2025  
 **ORDS version:** 25.3.1  
 **Oracle database version:** 23.8.0.25.04  
 **Jetty version used:** 12.0.25  
 **Java version used:** GraalVM EE 21.3.10 (build 17.0.11+7)
-  
+
 ---
 
 > &#9998; **Note:** This deployment assumes you have previously installed and configured ORDS for your target database. This tutorial relies on ORDS and the 26ai database in Podman containers to simulate a Development environment. HTTP is used for this example, steps for configuring HTTPS are outside the scope of this guide. APEX installation is outside the scope of this guide.
