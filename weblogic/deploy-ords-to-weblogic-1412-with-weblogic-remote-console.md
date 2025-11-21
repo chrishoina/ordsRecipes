@@ -16,7 +16,7 @@
 
 ## Overview
 
-This section describes the process for deploying ORDS, more specifically the `ords.war` file, in Weblogic version 14.1.2. The Weblogic Remote Console is used for uploading the ords.war file and deploying the app to a single Admininstrative Server. Managed Server and Clusters are outside the scope of this guide. 
+This section describes the process for deploying ORDS, more specifically the `ords.war` file, in Weblogic version 14.1.2. The Weblogic Remote Console is used for uploading the `ords.war` file and deploying the app to a single Admininstrative Server. Managed Server and Clusters are outside the scope of this guide. 
 
 1. Update the `security.verifySSL` ORDS configuration setting to `false` (default is `true`)
 2. Create a copy of your ORDS configuration directory
@@ -66,11 +66,15 @@ Launch WebLogic. Once the Administration Server is known to be in a `Running` st
 
 ### Step 4: Find target location for ORDS configuration
 
-In this example, we know (through previous deployments) once the `ords.war` file has been uploaded to WebLogic it will reside at: `/u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords.war`. Your location may differ, chose a location that is appropiate for your current set-up. Take note of this location. 
+In this example, we know (through previous deployments) once the `ords.war` file has been uploaded to WebLogic it will reside at:  
+`/u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords.war`  
+Your location may differ, chose a location that is appropiate for your current set-up. Take note of this location. 
 
 ### Step 5: Move ORDS configuration to target
 
-To simplfy this guide, the updated, copied `ords_config` (from [Step 2](#step-2-copy-ords-configuration)) will be moved to the following location: `/u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords_config`. Choose a location that makes sense for your current environment. 
+To simplfy this guide, the updated, copied `ords_config` (from [Step 2](#step-2-copy-ords-configuration)) will be moved to the following location:  
+`/u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords_config`  
+Choose a location that makes sense for your current environment. 
 
 > &#9998; **Note:** This should be the *copied version* of the `ords_config`; the version with `security.verifySSL` changed to `false`. This may be an unecessary step depending on whether you have enabled HTTPS. Although HTTPS configuration is outside the scope of this guide.
 
@@ -106,14 +110,21 @@ While the server is restarting, you can generate a new `ords.war` file for deplo
 
 > &#9998; **Note:** This step assumes you have an already valid ORDS installation, and the ORDS `/bin` has been added to your `$PATH`.
 
-The `ords.war` file must be updated to include the correct location of the `ords_config` directory. In this example, the new location (on Weblogic) of the `ords_config` directory is at: `/u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords_config`. To update the `WEB.XML` file (a WebLogic Deployment Descriptor file) in the `ords.war` file to so it includes the correct `ords_config` location, use the following ORDS CLI command: 
+The `ords.war` file must be updated to include the correct location of the `ords_config` directory. In this example, the new location (on Weblogic) of the `ords_config` directory is at:  
+`/u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords_config`  
+  
+  To update the `WEB.XML` file (a WebLogic Deployment Descriptor file) in the `ords.war` file to so it includes the correct `ords_config` location, use the following ORDS CLI command: 
 
 ```sh
 ords --config /u01/oracle/user_projects/domains/base_domain/servers/AdminServer/upload/ords/app/ords_config war ords2.war 
 ``` 
 
-The `--config` flag will temporarily override any Environment (`ENV`) settings previously set for the `ords_config` location, allowing you to update the `ords.war` file. This way, when the `ords.war` file regenerates it will indclude the correct *target* `ords_config` location. This example chooses to create an `ords2.war` file so as not to overwrite the previous `ords.war` file.
+The `--config` flag will temporarily override any Environment (`ENV`) settings previously set for the `ords_config` location, allowing you to update the `ords.war` file. When the `ords.war` file regenerates it will indclude the correct *target* `ords_config` location. This example chooses to create an `ords2.war` file so as not to overwrite the existing `ords.war` file. 
+
+> &#9998; **Note:** If the ORDS `/bin` has been added to your `$PATH`, then renaming the new `ords.war` file may not be necessary. The newly created `ords.war` file will be created in whatever current working directory you are in when you issued the `war` command. 
 
 ### Step 9: Upload ords.war to WebLogic
+
+
 ### Step 10: Deploy ORDS 
 ### Step 11: Test/Verify ORDS
