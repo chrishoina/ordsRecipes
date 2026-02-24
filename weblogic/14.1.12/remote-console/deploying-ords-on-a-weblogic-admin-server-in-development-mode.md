@@ -170,6 +170,8 @@ The ORDS landing page should now be accessible from `http://localhost:7001/ords/
        </context-param>...
     ```
 
+    Read more about application Context Parameters https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/14.1.2/wbapp/web_xml.html#GUID-17556A83-6260-48B0-8D64-4E5EDD1DA431.
+
 [^3]: [Reference](https://docs.oracle.com/en/middleware/standalone/weblogic-server/15.1.1/lockd/secure.html#GUID-F980DB67-7CDE-4EF8-986D-D188D4EDB706) for the various WebLogic Domain Modes and behavior.
 
 [^4]: You can also navigate to http://localhost:7001/ords, which will automatically redirect you to http://localhost:7001/ords/_/landing. This is the same behavior for ORDS when deployed in WebLogic, Standalone, or Apache Tomcat.
