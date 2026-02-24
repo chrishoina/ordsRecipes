@@ -38,6 +38,7 @@ JDK used:
 - Version used: Oracle AI Database 26ai Free Release 23.26.0.0.0
 
 [^1]: settings.xml
+
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
@@ -46,5 +47,23 @@ JDK used:
     <entry key="database.api.enabled">true</entry>
     <entry key="standalone.doc.root">/usr/local/etc/ords/config/global/doc_root</entry>
     <entry key="standalone.http.port">8080</entry>
+    </properties>
+    ```
+
+    pool.xml. 
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+    <properties>
+    <comment>Saved on Tue Feb 24 17:23:07 UTC 2026</comment>
+    <entry key="db.connectionType">basic</entry>
+    <entry key="db.hostname">localhost</entry>
+    <entry key="db.port">1521</entry>
+    <entry key="db.servicename">FREEPDB1</entry>
+    <entry key="db.username">ORDS_PUBLIC_USER</entry>
+    <entry key="feature.sdw">true</entry>
+    <entry key="restEnabledSql.active">true</entry>
+    <entry key="security.requestValidationFunction">ords_util.authorize_plsql_gateway</entry>
     </properties>
     ```
