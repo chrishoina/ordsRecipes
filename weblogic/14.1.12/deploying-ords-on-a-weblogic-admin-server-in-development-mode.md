@@ -11,7 +11,7 @@ Weblogic 14.1.2 has been installed
 ### ORDS
 
 - Version used: 25.4.0.r3641739
-- ORDS has been installed in a 26ai PDB (`FREEPDB1`)with a default configuration[^1]
+- ORDS has been installed in a 26ai PDB (`FREEPDB1`)with a default configuration)
 - Configured for HTTP traffic
 - ORDS `/bin` and `ords_config` are located on `localhost` at the following locations:
     - **ORDS_CONFIG:** `/usr/local/etc/ords/config`
@@ -22,7 +22,7 @@ Weblogic 14.1.2 has been installed
 
 - Version used: 14.1.2
 - Administration Server is accessed via the [WebLogic Remote Console v3.0.2](https://github.com/oracle/weblogic-remote-console/releases)
-- Administration Server has been deplopyed in Development Mode
+- Administration Server has been deployed in Development Mode
 
 ### Java
 
