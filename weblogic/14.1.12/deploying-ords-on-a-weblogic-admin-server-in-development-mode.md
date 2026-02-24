@@ -21,7 +21,7 @@ Weblogic 14.1.2 has been installed
 ### WebLogic
 
 - Version used: 14.1.2
-- Administration Server is accessed via the WebLogic Remote Console v3.0.2
+- Administration Server is accessed via the [WebLogic Remote Console v3.0.2](https://github.com/oracle/weblogic-remote-console/releases)
 - Administration Server has been deplopyed in Development Mode
 
 ### Java
@@ -32,7 +32,7 @@ JDK used:
 
 ### Database
 
-- Version used: Oracle AI Database 26ai Free Release 23.26.0.0.0
+- Version used: Oracle AI Database 26ai Free Release 23.26.0.0.0[^5]
 
 ## Preparing ORDS
 
@@ -172,3 +172,5 @@ The ORDS landing page should now be accessible from `http://localhost:7001/ords/
 [^3]: [Reference](https://docs.oracle.com/en/middleware/standalone/weblogic-server/15.1.1/lockd/secure.html#GUID-F980DB67-7CDE-4EF8-986D-D188D4EDB706) for the various WebLogic Domain Modes and behavior.
 
 [^4]: You can also navigate to http://localhost:7001/ords, which will automatically redirect you to http://localhost:7001/ords/_/landing. This is the same behavior for ORDS when deployed in WebLogic, Standalone, or Apache Tomcat.
+
+[^5]: At the time of writing, the latest Oracle 26ai Database container image can be found [here](https://container-registry.oracle.com/ords/ocr/ba/database/free).
