@@ -62,7 +62,7 @@ You must configure the `ords.war` such that WebLogic can be made aware of the lo
    
 **Option 1** is preferred. The ORDS CLI contains a WAR utility for recreating the `ords.war` such that it appends an additional `<context-param>` to the `web.xml` file of the `ords.war`. 
 
-Prior to modifying your existing `ords.war` you should create a backup. In this example, a backup folder named `backups` has been created, with the backup placed within: `/usr/local/bin/ords/ords.war.backup` (simply add a `.backup` and remove later ths "dummy extension" if you need to use the backup `.war`). 
+Prior to modifying your existing `ords.war` you should create a backup. In this example, a backup folder named `backups` has been created, with the backup placed within: `/usr/local/bin/ords/backups/ords.war.backup` (simply add a `.backup` and remove later ths "dummy extension" if you need to use the backup `.war`). 
 
 In order to better organize your various `ords.war` files it is a good idea to create a separate `/weblogic` subdirectory in the `/usr/local/bin/ords/` directory. The examples assume you have done this too.
 
