@@ -3,8 +3,9 @@
 # How to deploy ORDS to a Weblogic v14.1.2 Administration Server in Development Mode
 
 ## Assumptions: 
-Assumes you have previously installed ORDS in your target database
-Weblogic 14.1.2 has been installed 
+- Assumes you have previously installed ORDS in your target database.
+- Weblogic 14.1.2 has been installed
+- WebLogic Administration Server is accessed via the Remote WebLogic Console
 
 ## Environment overview:
 
