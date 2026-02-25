@@ -130,10 +130,11 @@ Oracle REST Data Services java info: Java HotSpot(TM) 64-Bit Server VM Oracle Gr
 
 The ORDS landing page should now be accessible from `http://localhost:7001/ords/_/landing`.[^4] You may now login with your REST-enabled user.
 
+
 [^1]: An example of a default configuration:
 
   settings.xml 
-  
+
   ```xml
   <?xml version="1.0" encoding="UTF-8"?>
   <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
