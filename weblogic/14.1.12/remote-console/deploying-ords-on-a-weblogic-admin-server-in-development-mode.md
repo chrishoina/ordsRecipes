@@ -39,7 +39,7 @@ JDK used:
 
 ### Overview
 
-ORDS has been installed in a containerized Oracle 26ai Database. The ORDS `/bin` and `ords_config` directories have been placed in locations similar to that in a typical Linux installation: 
+ORDS has been installed in a containerized Oracle 26ai Database. The ORDS `/bin` and `ords_config` directories have been placed in locations similar to that of a typical Linux installation: 
 
   - **ORDS /bin:** `/usr/local/bin/ords/bin`
   - **ORDS_CONFIG:** `/usr/local/etc/ords/config`
