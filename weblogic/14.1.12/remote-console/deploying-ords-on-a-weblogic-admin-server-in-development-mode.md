@@ -12,7 +12,7 @@
 ### ORDS
 
 - Version used: 25.4.0.r3641739
-- ORDS has been installed in a 26ai PDB (`FREEPDB1`)with a default configuration)
+- ORDS has been installed in a 26ai PDB (`FREEPDB1`) with a default configuration
 - Configured for HTTP traffic
 - ORDS `/bin` and `ords_config` are located on `localhost` at the following locations:
     - **ORDS_CONFIG:** `/usr/local/etc/ords/config`
