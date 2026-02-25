@@ -1,6 +1,6 @@
 <!-- SOPs -->
 <!-- Terminal window 80x24; use "Return to default size"  -->
-# How to deploy ORDS to a Weblogic v14.1.2 Administration Server in Development Mode
+# How to deploy ORDS to a Weblogic v14.1.2 Administration Server in Development Mode using the WebLogic Remote Console
 
 ## Assumptions: 
 - Assumes you have previously installed ORDS in your target database.
