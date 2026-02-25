@@ -12,7 +12,7 @@
 ### ORDS
 
 - Version used: 25.4.0.r3641739
-- ORDS has been installed in a 26ai PDB (`FREEPDB1`) with a default configuration
+- ORDS has been installed in a 26ai PDB (`FREEPDB1`) with a default configuration[^1]
 - Configured for HTTP traffic
 - ORDS `/bin` and `ords_config` are located on `localhost` at the following locations:
     - **ORDS_CONFIG:** `/usr/local/etc/ords/config`
@@ -130,36 +130,38 @@ Oracle REST Data Services java info: Java HotSpot(TM) 64-Bit Server VM Oracle Gr
 
 The ORDS landing page should now be accessible from `http://localhost:7001/ords/_/landing`.[^4] You may now login with your REST-enabled user.
 
-[^1]: settings.xml
+[^1]: An example of a default configuration:
 
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-    <properties>
-    <comment>Saved on Tue Feb 24 17:23:07 UTC 2026</comment>
-    <entry key="database.api.enabled">true</entry>
-    <entry key="standalone.doc.root">/usr/local/etc/ords/config/global/doc_root</entry>
-    <entry key="standalone.http.port">8080</entry>
-    </properties>
-    ```
+  settings.xml 
+  
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+  <properties>
+  <comment>Saved on Tue Feb 24 17:23:07 UTC 2026</comment>
+  <entry key="database.api.enabled">true</entry>
+  <entry key="standalone.doc.root">/usr/local/etc/ords/config/global/doc_root</entry>
+  <entry key="standalone.http.port">8080</entry>
+  </properties>
+  ```
 
-    pool.xml
+  pool.xml
 
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-    <properties>
-    <comment>Saved on Tue Feb 24 17:23:07 UTC 2026</comment>
-    <entry key="db.connectionType">basic</entry>
-    <entry key="db.hostname">localhost</entry>
-    <entry key="db.port">1521</entry>
-    <entry key="db.servicename">FREEPDB1</entry>
-    <entry key="db.username">ORDS_PUBLIC_USER</entry>
-    <entry key="feature.sdw">true</entry>
-    <entry key="restEnabledSql.active">true</entry>
-    <entry key="security.requestValidationFunction">ords_util.authorize_plsql_gateway</entry>
-    </properties>
-    ```
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+  <properties>
+  <comment>Saved on Tue Feb 24 17:23:07 UTC 2026</comment>
+  <entry key="db.connectionType">basic</entry>
+  <entry key="db.hostname">localhost</entry>
+  <entry key="db.port">1521</entry>
+  <entry key="db.servicename">FREEPDB1</entry>
+  <entry key="db.username">ORDS_PUBLIC_USER</entry>
+  <entry key="feature.sdw">true</entry>
+  <entry key="restEnabledSql.active">true</entry>
+  <entry key="security.requestValidationFunction">ords_util.authorize_plsql_gateway</entry>
+  </properties>
+  ```
 
 [^2]: You can review the new context parameter by creating a duplicate of this new "for WebLogic" ords.war file, and unarchiving it. Locate the `Web.xml` file and you will see the new context parameter name and value, in this example: 
 
