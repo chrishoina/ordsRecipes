@@ -52,7 +52,7 @@ ORDS has previously been installed in a PDB (`FREEPDB1`) in a containerized Orac
 
 Before deploying ORDS to WebLogic Server, we recommend copying your existing ORDS configuration directory to a location that will be used for your WebLogic pre-deployment tasks.[^3] In this example, the WebLogic `/base_domain` is located at `/Users/Oracle/Middleware/Oracle_Home/user_projects/domains/base_domain`. For demonstration purposes we've copied the contents of the `/usr/local/etc/ords/config` directory to a temporary, related location. 
 
-#### 1.2.1 Creating the new temporary directory**
+#### 1.2.1 Creating the new temporary directory
 
 Copying the ORDS configuration directories will ensure your existing ORDS configuration settings are retained. Copy the directory to a new directory with the following commands: 
 
