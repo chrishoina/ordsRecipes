@@ -25,7 +25,7 @@
 ### WebLogic
 
 - Version used: 14.1.2
-- Administration Server is accessed via the [WebLogic Remote Console v3.0.2](https://github.com/oracle/weblogic-remote-console/releases)
+- Administration Server is accessed via the WebLogic Remote Console v3.0.2[^8]
 - Administration Server has been deployed in Development Mode
 
 ### Java
@@ -199,5 +199,5 @@ With ORDS fully deployed, you can now access the ORDS landing page. The landing 
 [^6]: The use of this command assumes the ORDS `/bin` has been properly set (i.e., added to your `$PATH`). If not, you may execute this command from within your `~/ords/bin` directory.
 
 [^7]: You can also navigate to http://localhost:7001/ords, which will automatically redirect you to http://localhost:7001/ords/_/landing. This is the same behavior for ORDS when deployed in WebLogic, Standalone, or Apache Tomcat.
-
+[^8]: The latest WebLogic Remote Console can be obtained [here](https://github.com/oracle/weblogic-remote-console/releases).
 
