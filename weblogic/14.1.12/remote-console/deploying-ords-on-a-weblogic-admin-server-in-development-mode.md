@@ -3,9 +3,10 @@
 # How to deploy ORDS to a Weblogic v14.1.2 Administration Server in Development Mode using the WebLogic Remote Console
 
 ## Assumptions: 
-- Assumes you have previously installed ORDS in your target database.
-- Weblogic 14.1.2 has been installed
-- WebLogic Administration Server is accessed via the Remote WebLogic Console
+- ORDS has been installed in your target database
+- Weblogic 14.1.2 is installed/configured
+  - A single WebLogic Administration Server is accessed via the Remote WebLogic Console
+  - WebLogic is deployed in Development Mode
 
 ## Environment overview:
 
@@ -18,8 +19,8 @@
     - **ORDS_CONFIG:** `/usr/local/etc/ords/config`
     - **ORDS /bin:** `/usr/local/bin/ords/bin`
 - The ORDS `/bin` has been added to your `$PATH`
-- The ORDS configuration directry has been set to the `ORDS_CONFIG` environment variable
-- A single REST-enabled, `ORDSDEMO` user has previously been created
+- The ORDS configuration directory has been set to the `ORDS_CONFIG` environment variable
+- A single REST-enabled, `ORDSDEMO` user has been *previously* created
 
 ### WebLogic
 
