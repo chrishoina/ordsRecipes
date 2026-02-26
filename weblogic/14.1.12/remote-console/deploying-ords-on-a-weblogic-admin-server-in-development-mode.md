@@ -143,7 +143,7 @@ Oracle REST Data Services java info: Java HotSpot(TM) 64-Bit Server VM Oracle Gr
 
 ## 3 Testing Login
 
-With ORDS fully deployed, you can now access the ORDS landing page. The landing page will be accessible from `http://localhost:7001/ords/_/landing`.[^6] You may now login with your REST-enabled user.
+With ORDS fully deployed, you can now access the ORDS landing page. The landing page will be accessible from `http://localhost:7001/ords/_/landing`.[^7] You may now login with your REST-enabled user.
 
 [^1]: An example of a default configuration:
 
