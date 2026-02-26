@@ -185,7 +185,7 @@ With ORDS fully deployed, you can now access the ORDS landing page. The landing 
 
 [^4]: [Reference](https://docs.oracle.com/en/middleware/fusion-middleware/weblogic-server/14.1.2/lockd/secure.html#GUID-F980DB67-7CDE-4EF8-986D-D188D4EDB706__GUID-7ED4D85B-3F12-4C9B-80C2-82A9CF05232B) for the various WebLogic Domain Modes and behavior.
 
-[^5]: You can review the new context parameter by creating a duplicate of this new "for WebLogic" ords.war file, and unarchiving it. Locate the `Web.xml` file and you will see the new context parameter name and value, in this example: 
+[^5]: You can review the new context parameter by creating a duplicate of this new "for WebLogic" `ords.war` file, and unarchiving it. Locate the `Web.xml` file and you will see the new context parameter name and value, in this example: 
 
     ```xml
     ...<context-param>
